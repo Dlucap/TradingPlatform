@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="OrderAccumulator.Api/OrderAccumulator.Api.csproj" />
+  <Project Path="OrderAccumulator.Application/OrderAccumulator.Application.csproj" />
+  <Project Path="OrderAccumulator.Domain/OrderAccumulator.Domain.csproj" />
+  <Project Path="OrderAccumulator.Infrastructure/OrderAccumulator.Infrastructure.csproj" />
+  <Project Path="OrderAccumulator.Worker/OrderAccumulator.Worker.csproj" />
+</Solution>
