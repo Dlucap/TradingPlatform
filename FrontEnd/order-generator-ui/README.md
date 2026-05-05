@@ -1,3 +1,73 @@
+# Order Generator UI
+
+Interface React + TypeScript + Vite para geração de ordens do sistema OrderAccumulator.
+
+## 🚀 Configuração
+
+### Pré-requisitos
+
+- Node.js 18+ 
+- npm ou yarn
+
+### Instalação
+
+```bash
+npm install
+```
+
+### Configuração da API
+
+1. Copie o arquivo `.env.example` para `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Ajuste a URL da API no arquivo `.env` se necessário:
+   ```env
+   VITE_API_URL=https://localhost:7225
+   ```
+
+   **URLs disponíveis da API:**
+   - HTTPS: `https://localhost:7225`
+   - HTTP: `http://localhost:5287`
+
+### Executando o projeto
+
+```bash
+# Modo desenvolvimento (com hot reload)
+npm run dev
+
+# Build para produção
+npm run build
+
+# Preview do build de produção
+npm run preview
+```
+
+## 📁 Estrutura do Projeto
+
+```
+src/
+├── components/     # Componentes React
+├── services/       # Serviços de API
+├── types/          # Definições TypeScript
+├── App.tsx         # Componente principal
+└── main.tsx        # Entry point
+```
+
+## 🔧 Tecnologias
+
+- **React 19.2.5** - Biblioteca UI
+- **TypeScript 6.0.2** - Tipagem estática
+- **Vite 8.0.10** - Build tool e dev server
+- **ESLint** - Linter
+
+## 📝 Uso
+
+A aplicação permite gerar ordens que são enviadas para a API do OrderAccumulator. As ordens são processadas via protocolo FIX e acumuladas conforme as regras de negócio.
+
+---
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

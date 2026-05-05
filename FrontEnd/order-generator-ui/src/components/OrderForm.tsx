@@ -68,20 +68,20 @@ export default function OrderForm() {
   };
 
   const validate = (): string | null => {
-    if (form.quantity <= 0 || form.quantity >= 100000) {
-      return "Quantidade deve ser entre 1 e 99.999";
-    }
+  if (form.quantity <= 0 || form.quantity >= 100000) {
+    return "Quantidade deve ser entre 1 e 99.999";
+  }
 
-    if (
-      form.price <= 0 ||
-      form.price >= 1000 ||
-      Number((form.price % 0.01).toFixed(2)) !== 0
-    ) {
-      return "Preço inválido (múltiplo de 0.01 e < 1000)";
-    }
+  if (
+    form.price <= 0 ||
+    form.price >= 1000 ||
+    !Number.isInteger(form.price * 100)
+  ) {
+    return "Preço inválido (múltiplo de 0.01 e < 1000)";
+  }
 
-    return null;
-  };
+  return null;
+};
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

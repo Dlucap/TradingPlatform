@@ -1,6 +1,6 @@
 import type { OrderRequest, OrderResponse } from "../types/order";
 
-const API_URL = "https://localhost:5001/api/orders";
+const API_URL = `${import.meta.env.VITE_API_URL}/api/orders`;
 
 export class OrderService {
   static async sendOrder(order: OrderRequest): Promise<OrderResponse> {
