@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Testes/">
+    <Project Path="Testes/OrderAccumulator.Tests/OrderAccumulator.Tests.csproj" />
+  </Folder>
   <Project Path="OrderAccumulator.Api/OrderAccumulator.Api.csproj" />
   <Project Path="OrderAccumulator.Application/OrderAccumulator.Application.csproj" />
   <Project Path="OrderAccumulator.Domain/OrderAccumulator.Domain.csproj" />
