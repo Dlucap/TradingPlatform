@@ -12,8 +12,8 @@ O projeto é composto por três componentes principais:
 
 ```
 ┌─────────────┐      HTTP/REST       ┌──────────────┐      FIX Protocol      ┌─────────────┐
-│   React UI  │ ───────────────────> │  API (.NET)  │ <───────────────────> │   Worker    │
-│   (Port ??) │     JSON Orders      │ (Port 7225)  │   (Port 5001 FIX)     │   (.NET)    │
+│   React UI  │ ───────────────────> │  API (.NET)  │ <───────────────────>  │   Worker    │
+│   (Port ??) │     JSON Orders      │ (Port 7225)  │   (Port 5001 FIX)      │   (.NET)    │
 └─────────────┘                      └──────────────┘                        └─────────────┘
                                       FIX Initiator                          FIX Acceptor
 ```
